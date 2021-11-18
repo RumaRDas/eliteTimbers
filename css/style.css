@@ -380,4 +380,98 @@ color: #C06742;
       font-size: 4rem;
     }
   }
+
+
+/* display text animation*/
+
+span {
+  font: 100px "Oswald", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+/* Clip Background Image */
+  background: url("../images/text-fill.png") repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  
+  animation: reveal 3000ms ease-in-out forwards 1000ms,
+ aitf 80s linear infinite;
+
+
+ 
+}
+
+@keyframes reveal {
+  80%{
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  20% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Animation for display text */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 9s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
   /*# sourceMappingURL=style.css.map */
