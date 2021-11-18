@@ -98,6 +98,7 @@ margin-bottom: 10px;
 }
 .product-item{
 text-align: center;
+padding-bottom: ;
 }
 .products_header{
   color: white;
@@ -109,6 +110,7 @@ text-align: center;
   color: black;
   font-size: 16px;
  font-weight: 500;
+
 }
 
 .product-caption{
@@ -301,8 +303,7 @@ text-align: center;
 }
 
 .substyle{
-   background-color: ;
-   padding-top: 5%;
+   background-color:    padding-top: 5%;
   
   }
   #about img{
@@ -384,7 +385,7 @@ color: #C06742;
 
 /* display text animation*/
 
-span {
+.animation {
   font: 100px "Oswald", sans-serif;
   font-weight: 700;
   letter-spacing: 0;
@@ -398,14 +399,14 @@ span {
 
 /* Animate Background Image */
   -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
+
 
 /* Activate hardware acceleration for smoother animations */
 
   -webkit-transform: translate3d(0,0,0);
   -webkit-backface-visibility: hidden;
   
-  animation: reveal 3000ms ease-in-out forwards 1000ms,
+  animation: reveal 3000ms ease-in forwards 1000ms,
  aitf 80s linear infinite;
 
 
@@ -415,20 +416,19 @@ span {
 @keyframes reveal {
   80%{
     letter-spacing: 8px;
+  
   }
   100% {
     background-size: 300% 300%;
+    
   }
 }
-@keyframes glow {
-  20% {
-    text-shadow: 0 0 8px #fff;
-  }
-}
+
+
 
 /* Animate Background Image */
 
-@-webkit-keyframes aitf {
+@keyframes aitf {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
 }
