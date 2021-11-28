@@ -67,10 +67,10 @@ margin-bottom: auto;
       transition: .5s ease;
   }
 
-  #about .itemBox{
+  #about .aboutBox{
     transition: .5s ease;
   }
-#about .itemBox:hover{
+#about .aboutBox:hover{
   transition: .5s ease;
     transform: scale(1.1); 
 box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) ;
@@ -91,14 +91,14 @@ box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) ;
   /*PRODUCTS*/
 
 #products{
-  background: #f5b296;
+  background: #C06742;
   text-align: center;
 margin-bottom: 10px;
 
 }
 .product-item{
 text-align: center;
-padding-bottom: ;
+
 }
 .products_header{
   color: white;
@@ -196,7 +196,7 @@ text-align: center;
     left: 0;
     height: 100%;
     width: 50%;
-    background:#f5b296;
+    background:#C06742;
    transform: skew(0deg, 7deg);
    border:20px solid transparent;
    opacity: 0.5px;
@@ -209,7 +209,7 @@ text-align: center;
     right: 0;
     height: 100%;
     width: 50%;
-   background:#f5b296;
+   background:#C06742;
     transform: skew(0deg, -7deg);
     border: 20px solid transparent;
     opacity: 0.5px;
@@ -303,13 +303,16 @@ text-align: center;
 }
 
 .substyle{
-   background-color:    padding-top: 5%;
+  
+   padding-top: 5%;
   
   }
+
   #about img{
 
     padding-top: 30px
   }
+
   .about_header{
 font-size: 32px;
 color: #C06742;
@@ -322,7 +325,7 @@ color: #C06742;
   /* CONTACT STYLE */
   #contact{
     position: relative;
-    text-align: center;
+
     background: url("../images/display_image.jpg") no-repeat center top;
     background-size: cover;
     min-height: 560px;
@@ -341,7 +344,45 @@ color: #C06742;
       width: 100%;
       height: 100%;
     }
+.contactBox {
+  background-color: #fff;
+margin-top: 30px;
+margin-bottom: 30x;
+padding: 20px;
+padding-bottom: 30px;
+}
 
+.contact_header{
+  color: #C06742;
+  font-size: 25px;
+  padding-bottom: 10px;
+
+}
+#result{
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 15px;
+font-weight: 500;
+}
+
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: all;
+    }
+    
+  }
   .imgSize{
     width:27px ;
     margin-left: 10px;
@@ -372,6 +413,7 @@ color: #C06742;
  .bottom{
    background-color: #f0eceb;
    color: rgb(10, 10, 10);
+   font-size: 8px;
  }
  .blankSpace{
  min-height: 30px;
