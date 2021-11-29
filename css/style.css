@@ -3,13 +3,13 @@ body {
   }
   /* unvisited link */
 a:link {
-  color: #C06742;
+  color: #000000;
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: rgb(212, 228, 70);
+  color: #C06742;
 }
   /*NAVBAR STYLE*/
  
@@ -52,7 +52,6 @@ a:hover {
   }
   
   .border_home {
-
     background-color:#070707;
   opacity: 60%;
   width: 100%;
@@ -84,12 +83,9 @@ box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) ;
     background-color: #fff;
     color: black;
     padding: 10px;
-
-  
   }
 
   /*PRODUCTS*/
-
 #products{
   background: #C06742;
   text-align: center;
@@ -157,8 +153,6 @@ text-align: center;
   color: rgb(139, 8, 8);
   padding-bottom: 10px;
 }
-
-
   .btnStyle{
     padding-top: 10px;
       margin-top: 0px;
@@ -186,8 +180,7 @@ text-align: center;
     position: relative;
     text-align: center;
     padding: 15px;
-    margin-top: -45px;
-   
+    margin-top: -45px; 
   }
   #blackStyle:before {
     content: '';
@@ -281,7 +274,6 @@ text-align: center;
   #home img{
       height: 330px;
       height: 330px;
-
   }
 
   #parallelogram {
@@ -301,15 +293,11 @@ text-align: center;
   background: #252525;
   position: relative;
 }
-
 .substyle{
-  
    padding-top: 5%;
-  
   }
 
   #about img{
-
     padding-top: 30px
   }
 
@@ -325,7 +313,6 @@ color: #C06742;
   /* CONTACT STYLE */
   #contact{
     position: relative;
-
     background: url("../images/contat_image.jpg") no-repeat center top;
     background-size: cover;
     min-height: 560px;
