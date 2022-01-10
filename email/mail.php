@@ -5,7 +5,8 @@ $name = $_POST['name'];
 $email= $_POST['email'];
 $number= $_POST['number'];
 $message= $_POST['message'];
-$to = "info@elitetimbers.com.au";
+//$to = "info@elitetimbers.com.au";
+$to = "rumaadl16@gmail.com";
 
 $subject = "Mail From EliteTimbers website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Phone Number = " . $number. "\r\n  Message =" . $message;

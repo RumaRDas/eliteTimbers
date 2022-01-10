@@ -1,5 +1,6 @@
 body {
     margin-top:95px;
+
   }
   /* unvisited link */
 a:link {
@@ -401,10 +402,15 @@ font-weight: 500;
  /*FOOTER*/
 
  .footer{
+
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
    background-color: #f0eceb;
    color: rgb(10, 10, 10);
-   font-size: 8px;
-   padding: 25px 0;
+   font-size: 7px;
+   padding-top: 20px;
+   bottom: 0;
    text-align: center;
    text-transform: none;
  }

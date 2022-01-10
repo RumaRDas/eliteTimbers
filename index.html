@@ -26,48 +26,50 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo_3.png" />
+
     <title>EliteTimbers</title>
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav
-      class="navbar navbar-light navbar-expand-lg py-1 fixed-top"
-      id="mainNav"
-    >
-      <div class="container">
-        <a href="#home" class="navbar-brand">
-          <img src="./images/sample_3.png" height="80" alt="brandlogo" />
-        </a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#products">PRODUCTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--Nav Container div-->
+<!-- Navigation -->
+<nav
+class="navbar navbar-light navbar-expand-lg py-1 fixed-top"
+id="mainNav"
+>
+<div class="container">
+  <a href="#home" class="navbar-brand">
+    <img src="./images/sample_3.png" height="80" alt="brandlogo" />
+  </a>
+  <button
+    class="navbar-toggler navbar-toggler-right"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#home">HOME</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#about" >ABOUT</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#products" >PRODUCTS</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#services"  >SERVICES</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#contact" >CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--Nav Container div-->
     </nav>
 
     <!--Showcase-->
@@ -244,54 +246,51 @@
                     <br /><br />
                     <div class="mapouter">
                       <div class="gmap_canvas">
-                        <iframe class="address_map"
-      
+                        <iframe
+                          class="address_map"
                           src="https://maps.google.com/maps?q=101%20portwakefield%20rd%20canva%20sa%205094&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        
                         ></iframe>
-      
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
-                <form id="contactForm" action="./email/mail.php" method="POST">
+                <form id="contactForm" action="./email/mail.php" method="post">
                   <h3 class="contact_header">Make an Enquiry</h3>
                   <div class="row mt-4">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          placeholder="Name"
-                          id="name"
-                          name="name"
-                          class="form-control"
-                        />
-                      </div>
+                    <div class="form-group col-md-12">
+                      <input
+                        type="text"
+                        placeholder=" Your Name"
+                        id="name"
+                        name="name"
+                        required="required"
+                        class="form-control"
+                        data-validation-required-message="Please enter your name."
+                      />
                     </div>
 
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          placeholder=" Email"
-                          class="form-control"
-                          id="email"
-                          name="email"
-                        />
-                      </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="email"
+                        placeholder="Your Email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required="required"
+                      />
                     </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          placeholder=" Phone Number"
-                          class="form-control"
-                          id="phoneNumber"
-                          name="number"
-                        />
-                      </div>
+
+                    <div class="form-group col-md-6">
+                      <input
+                        type="tel"
+                        placeholder=" Phone Number"
+                        class="form-control"
+                        id="Your Phone"
+                        required="required"
+                        data-validation-required-message="Please enter your phone number."
+                      />
                     </div>
 
                     <div class="col-md-12">
@@ -299,22 +298,29 @@
                         <textarea
                           cols="30"
                           rows="6"
-                          placeholder="Message"
+                          placeholder=" Your Message"
                           id="message"
                           name="message"
+                          required="required"
                           class="form-control"
+                          data-validation-required-message="Please enter a message."
                         ></textarea>
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <input
-                        type="submit"
-                        class="btn btn-lg btn-block sub-button"
-                      />
+                      <div class="success text-gray-400" id="success"></div>
+                      <button 
+                      id="sendMessageButton"
+                      type="submit"
+                      class="btn btn-lg btn-block sub-button"
+                      >
+Submit
+                      </button>
+         
                     </div>
                   </div>
                 </form>
-                <div class="success text-gray-400" id="result"></div>
+ 
               </div>
             </div>
           </div>
@@ -323,21 +329,23 @@
     </section>
 
     <!--FOOTER-->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <span
-              >Design By:
-              <a href="#" target="_blank" class="text-dark">Ruma Das</a>
-            </span>
-          </div>
-        </div>
+    <footer class="navbar-fixed-bottom footer ">
+      <div class="container ">
+   
+            <p 
+              >Design By: Ruma Das
+            </p>
+
       </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -348,6 +356,7 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
+  
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
