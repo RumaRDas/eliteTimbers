@@ -100,9 +100,10 @@ margin-bottom: 10px;
 }
 .product_back{
 background-color: #f0eceb;
-margin-top: 10px;
-padding: 10px;
-height:350px;
+margin: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
+height:100%;
 
 }
 .products_text{
@@ -117,6 +118,8 @@ height:350px;
   justify-items: center;
   align-items: center;
   margin-top: 8%;
+  padding-bottom: 20px;
+margin-bottom: 20px; 
   }
 .product-caption{
   color: #C06742;
@@ -134,13 +137,10 @@ height:350px;
 }
 /* new roof and floor changes css */
 .wrapper {
+  width:90%;
   position: relative;
   flex-grow: 1;
   margin: auto;
-  width: 400px;
-  /* max-width: 1200px;
-  max-height: 1200px; */
-  
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -152,7 +152,7 @@ height:350px;
   transform: rotateY(180deg);
 }
 .wrapper2 {
-  width: 400px;
+  width:90%;
   position: relative;
   flex-grow: 1;
   margin: auto;
@@ -161,7 +161,8 @@ height:350px;
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 1vmin;
   justify-items: center;
-  align-items: center;  
+  align-items: center;
+ 
 }
 .product_IMG {
   z-index: 1;
