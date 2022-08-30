@@ -14,11 +14,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
     <!-- Bootstrap CSS -->
+<!-- Font Awesome -->
+<!-- <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/> -->
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
+  rel="stylesheet"
+/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -130,20 +145,8 @@ id="mainNav"
             </h5>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-md-4 product-item mb-6">
-            <img
-              src="./images/image_4.jpg"
-              alt="roof trusses"
-              class="product_image img-fluid"
-            />
-
-            <div class="product-caption">
-              <h4>Roof Trusse</h4>
-            </div>
-          </div>
-
-          <div class="col-md-4 product-item mb-6">
+        <div class="row mt-6 product_back">
+          <!-- <div class="col-md-4 product-item mb-6">
             <img
               src="./images/image_7.jpg"
               alt="wall frame"
@@ -153,24 +156,78 @@ id="mainNav"
             <div class="product-caption">
               <h4>Wall frame</h4>
             </div>
-          </div>
-          <div class="col-md-4 product-item mb-6">
-            <img
+          </div> -->         
+          <div class="col-md-6  mb-6">
+            <!-- <img
               src="./images/image_6.jpg"
               alt="floor trusses"
               class="product_image img-fluid"
             />
-
             <div class="product-caption">
               <h4>Floor Trusses</h4>
+            </div> -->
+            <div class="wrapper">
+              <img class="product_IMG"src="./images/image_1.jpg" alt="">
+              <img class="product_IMG"src="./images/image_2.jpg" alt="">
+              <img class="product_IMG"src="./images/image_3.jpg" alt="">
+              <img class="product_IMG"src="./images/image_4.jpg" alt="">
+              <img class="product_IMG"src="./images/image_5.jpg" alt="">
+              <img class="product_IMG" src="./images/image_6.jpg"alt="">
+             <!-- <img class="product_IMG" src="./images/image_2.jpg"alt="">  -->
+              <!-- <img class="product_IMG"src="./images/image_6.jpg" alt=""> -->
+              <!-- <img class="product_IMG"src="./images/image_1.jpg" alt=""> -->
             </div>
+
           </div>
+          <div class="col-md-5 mb-6 product-item">
+
+            <div class="product-caption">
+
+              <span>Roof Trusse</span>
+   
+
+            </div>
+            <span>Better Roof.Better Home</span>
+            <p><span class="product_text_brand">EliteTimbers</span> You Can Trust</p>
+          </div>
+        </div>
+        <div class="row mt-6 product_back ">
+          <div class="col-md-6 mb-6 product-item">
+
+            <div class="product-caption">
+
+              <span>Floor Trusse</span>
+   
+
+            </div>
+            <span>Build your home With better floors</span>
+            <p><span class="product_text_brand">EliteTimbers</span> You Can Trust</p>
+          </div>
+          
+          <div class="col-md-6  mb-6 flip">
+
+            <div class="wrapper">
+              <img class="product_IMG"src="./images/image_7.jpg" alt="">
+              <img class="product_IMG"src="./images/image_8.jpg" alt="">
+              <img class="product_IMG"src="./images/image_9.jpg" alt="">
+              <img class="product_IMG"src="./images/image_10.jpg" alt="">
+              <img class="product_IMG"src="./images/image_11.jpg" alt="">
+              <img class="product_IMG" src="./images/image_12.jpg"alt="">
+             <!-- <img class="product_IMG" src="./images/image_2.jpg"alt=""> 
+              <img class="product_IMG"src="./images/image_6.jpg" alt="">
+              <img class="product_IMG"src="./images/image_1.jpg" alt=""> -->
+            </div>
+
+          </div>
+   
         </div>
       </div>
       <div class="row mt-3 blankSpace"></div>
 
       <!--container div-->
     </section>
+   
+  
     <div id="blackStyle"></div>
     <!--Services-->
     <section id="services">
@@ -222,7 +279,54 @@ id="mainNav"
         </div>
       </div>
     </section>
+<div>
 
+</div>
+     <!--Carousel Slider-->
+  
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <img
+      src="./images/image_3.jpg"
+      class="d-block w-100"
+      alt="Canyon at Nigh"
+    />
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <img
+      src="./images/image_4.jpg"
+      class="d-block w-100"
+      alt="Cliff Above a Stormy Sea"
+    />
+  </div>
+</div>
+<!-- Inner -->
+
+<!-- Controls -->
+<button
+  class="carousel-control-prev"
+  type="button"
+  data-mdb-target="#carouselBasicExample"
+  data-mdb-slide="prev"
+>
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <!-- <span class="visually-hidden">Previous</span> -->
+</button>
+<button
+  class="carousel-control-next"
+  type="button"
+  data-mdb-target="#carouselBasicExample"
+  data-mdb-slide="next"
+>
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <!-- <span class="visually-hidden">Next</span> -->
+</button>
+</div>
+<!-- Carousel wrapper -->
+     <!--Carousel-->
     <!--CONTACT-->
     <section id="contact">
       <div class="contact-overlay">
@@ -235,7 +339,7 @@ id="mainNav"
                 <div class="card">
                   <div class="card-body mt-0">
                     <p class="mb-0">Builing 1,</p>
-                    <p class="mb-0">101 Portwakefield Rd</p>
+                    <p class="mb-0">101 Port Wakefield Rd</p>
                     <p class="mb-0">Cavan , SA 5094</p>
                     <p class="mb-0">
                       <i class="fa fa-phone-square pr-10"></i> 08 81177288
@@ -362,5 +466,9 @@ Submit
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"
+></script>
   </body>
 </html>
