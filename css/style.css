@@ -96,13 +96,14 @@ margin-bottom: 10px;
 .products_header{
   color: white;
   font-size: 60px;
-  margin-top: 5%;
+  margin-top: 2%;
+
 }
 .product_back{
 background-color: #f0eceb;
 margin: 10px;
 padding-top: 20px;
-padding-bottom: 20px;
+padding-bottom: 8px;
 height:100%;
 
 }
