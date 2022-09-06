@@ -8,7 +8,14 @@ navLinks.forEach((l) => {
   });
 });
 
-$('.carousel').carousel({
-  interval: 3000,
-  pause: false
-})
+//MODAL
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("myModal").style.display = "block";
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+//MODAL

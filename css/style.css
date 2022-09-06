@@ -362,6 +362,153 @@ color: #C06742;
       padding-left: 40px;
       padding-bottom: 20px;
   }
+/*GALLERY STYLE*/
+#gallery{
+  text-align: center;
+  background-color: #fae5dc;
+  margin-top: 5%;
+  padding-top: 5px;
+  padding-bottom: 10%;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding-top: 10px;
+
+    }
+
+    .gallery_body {
+      display: grid;
+      grid-template-rows: repeat(5, 18vh);
+      grid-template-columns: repeat(3, 20vw);
+      transition: all 0.3s ease(gravity);
+      background-color: #fae5dc;
+      border-radius: 10px;
+      padding: 0.25em;
+    }
+      @media (min-width: 40em) {
+        .gallery{
+          height: 100%;
+         }
+       .gallery_body {
+          grid-template-rows: repeat(3, 25vh);
+          padding-top: 5%;
+          margin-top: 5%;
+        }
+      
+      }
+    
+      @media (min-width: 10em)  {
+        .gallery{
+          height: 100%;
+         }
+    .gallery_body{
+      grid-template-columns: repeat(3, 25vw);
+      grid-template-rows: repeat(2, 20vh);
+      padding-top: 5%;
+      margin-top: 5%;
+    }
+      }
+    
+      @media (min-width: 60em) {
+    .gallery_body{
+      grid-template-columns: repeat(11, 7vw);
+      grid-template-rows: 25vh;
+    }
+      }
+    
+      .gallery_img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: all 0.3s /2 ease(downhill);
+        position: relative;
+        box-shadow: 0 0 0 #0000;
+        /* opacity: 0.67; */
+        filter: sepia(30%) hue-rotate(180deg);
+      }
+        .gallery_img:first-child {
+          border-radius: 10px 10px 0 0;
+        }
+        .gallery_img:last-child {
+          border-radius: 0 0 10px 10px;
+        }
+      
+        @media (min-width: 40em) and (max-width: 59.99em) {
+          .gallery_img:first-child {
+            border-radius: 10px 0 0 0;
+          }
+          .gallery_img:nth-child(5) {
+            border-radius: 0 10px 0 0;
+          }
+          .gallery_img:nth-child(6) {
+            border-radius: 0 0 10px 0;
+          }
+          .gallery_img:last-child {
+            border-radius: 0 0 0 10px;
+          }
+        }
+      
+        @media (min-width: 60em) {
+          .gallery_img:first-child {
+            border-radius: 10px 0 0 10px;
+          }
+          .gallery_img:last-child {
+            border-radius: 0 10px 10px 0;
+          }
+        }
+      
+        .gallery_img:hover {
+          opacity: 1;
+          z-index: 1;
+          box-shadow: 1em 1em 1em #0004;
+          transition: all 0.3s ease(downhill);
+          filter: sepia(0%) hue-rotate(0deg);
+          border-radius: 5px;
+          width: 200%;
+          height: 200%;
+          left: -100%;
+          top: -100%;
+        }
+          @media (min-width: 40em) {
+            .gallery_img:hover{
+              width: 250%;
+              height: 500%;
+              left: -75%;
+              top: -200%;
+  }
+          }
+      
+          @media (min-width: 10em) and (orientation: landscape) {
+     .gallery_img:hover{
+      width: 250%;
+      height: 200%;
+     }
+          }
+      
+          @media (min-width: 40em) and (orientation: portrait) {
+        .gallery_img:hover{
+          width: 300%;
+          height: 300%;
+          left: -100%;
+          top: -100%;
+        }
+          }
+          
+
+          @media (min-width: 60em) and (orientation: landscape) {
+       .gallery_img:hover{
+        width: 260%;
+        height: 230%;
+        left: -75%;
+        top: -100%;
+       }         
+          }
+      
   /* CONTACT STYLE */
   #contact{
     position: relative;
@@ -371,7 +518,6 @@ color: #C06742;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
-    margin-top: 5%;
 
   }
   #contact .contact-overlay{
@@ -584,3 +730,128 @@ scroll-margin: 0;
   /*# sourceMappingURL=style.css.map */
   
   
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Modal */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
